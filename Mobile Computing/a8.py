@@ -18,7 +18,7 @@ a2=int(keybr,2)^int(ranbl,2)
 a3=al^a2
 a4=bin(a3)[2:].zfill(64)
 
-print("128 Bit Key = ",keyb)
-print("128 Random Bits Generated = ",ranb)
-print("Ki = ",a4)
-print("length of Ki= ",len(a4))
+print("\n128 Bit Key = ",keyb, "\n")
+print("128 Random Bits Generated = ",ranb, "\n")
+print("Ki = ",a4, "\n")
+print("length of Ki= ",len(a4), "\n")

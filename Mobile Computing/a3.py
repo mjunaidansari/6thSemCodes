@@ -21,6 +21,6 @@ a5=a4[0:32]
 a6=a4[32:]
 a7=int(a5,2)^int(a6,2)
 
-print("128 Bit Key = ",kb)
-print("128 Random Bits Generated = ",mb)
-print("RES/SRES = ",bin(a7)[2:].zfill(len(a5)))
+print("\n128 Bit Key = ",kb, "\n")
+print("128 Random Bits Generated = ",mb, "\n")
+print("RES/SRES = ",bin(a7)[2:].zfill(len(a5)), "\n")
