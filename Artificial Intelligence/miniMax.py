@@ -1,5 +1,4 @@
 # MiniMax Algorithm
-
 import math 
 
 def printNodes(nodes, c): 
@@ -14,8 +13,8 @@ def miniMax(terminals):
 	nodes = terminals
 	operation = True # true for max, false for min
 	c = 0
+	print('Initial terminals: ', nodes)
 	while len(nodes) != 1:
-		printNodes(nodes, c)
 		c += 1
 		newNodes = []
 		for i in range(0, len(nodes), 2): 
@@ -23,12 +22,15 @@ def miniMax(terminals):
 				newNodes.append(max(nodes[i], nodes[i+1]))
 			else: 
 				newNodes.append(min(nodes[i], nodes[i+1]))
+		if operation: 
+			print('Maximization: ', newNodes)
+		else: 
+			print('Minimization: ', newNodes)
 		nodes = newNodes
 		operation = not operation
-	printNodes(nodes, c)
 	
 def isPowerOf2(n): 
-	return n > 0 and (n & n - 1 ) == 0
+	return n > 0 and (n & n - 1) == 0
 
 ip = input("Enter the Terminal Values: ")
 terminals = [int(value) for value in ip.split()]
