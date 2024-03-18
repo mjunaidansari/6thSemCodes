@@ -8,7 +8,7 @@ void main() {
 	int n = 0;
 	int i;
 
-	printf("\nEnter your C code (enter empty line to finish):\n\n");
+	printf("\nEnter your Python code (enter empty line to finish):\n\n");
 	while(n < 15 && fgets(code[n], sizeof(code[0]), stdin)){
 		if(code[n][0] == '\n')
 			break;
@@ -19,8 +19,9 @@ void main() {
 	for(i=0; i<n; i++){
 		printf("%s", code[i]);
 		if(strcmp(strtok(code[i], " "), "\treturn") == 0)
-			printf("\n");
 			break;
 	}
+
+	printf("\n");
 
 }
