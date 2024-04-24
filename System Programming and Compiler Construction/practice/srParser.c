@@ -20,7 +20,7 @@ void main() {
 	scanf("%d", &ruleCount);
 
 	// get production rules in form of left->right
-	printf("\nEnter the Production rules:\n");
+	printf("\nEnter the Production rules: ");
 	for(i=0; i<ruleCount; i++) {
 		scanf("%s", temp);
 		token1 = strtok(temp, "->");
